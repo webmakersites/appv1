@@ -1,6 +1,6 @@
 {
-  "name": "Progressive Web App Example",
-  "short_name": "PWA Example",
+  "name": "Web Maker Offline App",
+  "short_name": "Web Maker",
   "icons": [{
     "src": "icon-128x128.png",
       "sizes": "128x128",
@@ -24,6 +24,6 @@
     }],
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#333333"
+  "background_color": "#428e92",
+  "theme_color": "#00363a"
 }
