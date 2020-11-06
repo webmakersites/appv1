@@ -6,7 +6,7 @@ var cacheName = 'v1';
 var appShellFiles = [
     './',
     './index.html',
-    './about.html',
+    './login.html',
     './blog.html',
 ];
 
