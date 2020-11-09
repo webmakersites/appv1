@@ -8,6 +8,7 @@ var appShellFiles = [
     './index.html',
     './login.html',
     './install.html',
+    './qr_code.html',
 ];
 
 self.addEventListener('install', function(e) {
