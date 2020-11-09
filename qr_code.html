@@ -7,10 +7,10 @@
       rel="stylesheet">
 
     <meta charset="UTF-8">
-    <title>Web Maker Dashboard</title>
+    <title>Web Maker Qr Code Maker</title>
     <link rel="manifest" href="./manifest.json">
     <link rel='stylesheet' href='./style.css'>
-    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <link rel="shortcut icon" href="https://docs.google.com/drawings/d/e/2PACX-1vR6mnb1i0uRGYg5XVluPQ52bDaYQb7CjcuwWxq5njzRJE9mfhqpZXYl6AGmAFV2WX4hfe3y9Ax1TvrF/pub?w=604&h=455" type="image/x-icon">
     <script>
         if('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./service-worker.js');
@@ -39,6 +39,13 @@
   .theme {
   background-color: #006064; /* Red */
     color: white;
+      transition: 0.3s;
+
+
+  }
+  .theme:active {
+  background: gray; /* Red */
+    color: white;
 
   }
   /* The Modal (background) */
@@ -63,6 +70,33 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+}
+/* QR CODE GENORATOR CCS START */
+textarea {
+  
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px ;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  border-radius: 10px;
+    font-family: roboto;
+}
+textarea:hover {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+ 
+  
+
+}
+img {
+font-family: roboto;
+font-size: 24px;
+color: black;
+width: 250px;
+  height: 250px;
 }
 
 </style>
@@ -127,6 +161,29 @@ window.onclick = function(event) {
 </script>
 </html>
 
-<embed src="https://qmwtox0d6fpib5bwu4br1w-on.drv.tw/Websites/Tiydines/QR%20Code%20Scaner.html" width="100%" height="600">
-</embed>
+<!--<embed src="https://qmwtox0d6fpib5bwu4br1w-on.drv.tw/Websites/Tiydines/QR%20Code%20Scaner.html" width="100%" height="600">
+</embed>-->
+<center>
 
+
+<script>function create()
+{
+    var data=document.getElementById("data").value;
+    document.getElementById("qrimage").innerHTML="<img style='width: 250; height: 250;' src='https://qr-generator.qrcode.studio/qr/custom?download=false&file=svg&size=3000&data="+encodeURIComponent(data)+" ' alt='ERROR Please put a URL or Text in the text box above. If you are offline, you can only make qr codes that you have allready made.' />";
+}</script>
+
+
+
+
+
+
+
+<br>
+<textarea placeholder="Type  URL or Text Here" cols="40" rows="1" id="data"></textarea>
+<br>
+<button class="button theme" onclick="create()">Create Qr Code</button>
+<br>
+<div class="module-border-wrap">
+<div  id="qrimage">
+
+</div>
