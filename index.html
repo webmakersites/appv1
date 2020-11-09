@@ -1,8 +1,11 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Web Maker App</title>
+    <title>Web Maker Toolbox</title>
     <link rel="manifest" href="./manifest.json">
     <link rel='stylesheet' href='./style.css'>
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
@@ -59,6 +62,17 @@
   border: 1px solid #888;
   width: 80%;
 }
+.appicon {
+font-size: 40px;
+  transition: 0.2s;
+
+}
+.appicon:hover {
+font-size: 50px;
+}
+.w20 {
+  width: 20%;
+}
 
 </style>
 <body>
@@ -68,10 +82,39 @@
          <a href='install.html' class='selected'>Enable Offline</a>
 
 
+
     </nav>
     <main>
-         <a href='login.html' class='button theme'>Sign In</a>
-                  <a id="myBtn" class='button theme'>Enable Offline</a>
+    <center >
+         <a   href='login.html' class='button theme w20'><span class="material-icons appicon">perm_identity</span><br>Sign In </a>
+         
+                  <a id="myBtn" class='button theme w20'>                  <span  class='material-icons appicon'>signal_wifi_off</span><br>
+Enable Offline
+</a>
+         <a  href='https://sites.google.com/view/web-maker-toolbox-updates/update' class='button theme w20'><span class="material-icons appicon">
+system_update
+</span><br>Update</a>
+
+<br>
+
+ <a href='qr_code.html' class='button theme w20'>                  <span  class='material-icons appicon'>qr_code</span><br>
+Qr Code Generator
+</a>
+
+<a href='about.html' class='button theme w20'>                  <span  class='material-icons appicon'>info</span><br>
+About
+</a>
+
+<a href='qr_code.html' class='button theme w20'>                  <span  class='material-icons appicon'>library_add</span><br>
+Extensions
+</a>
+
+<br>
+
+<a href='qr_code.html' class='button theme w20'>                  <span  class='material-icons appicon'>description</span><br>
+New Google Form
+</a>
+
 
     </main>
      <!-- My Acount Box -->
